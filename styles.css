@@ -15,7 +15,8 @@ body::before {
        (max-width: 1024px) and (-webkit-max-device-pixel-ratio: 1.5),
        (max-width: 1024px) and (max-resolution: 1.5dppx) {
   body::before {
-    background-image: url('images/bg_1024.jpg');
+      background-image: url('images/stars-sky.jpg');
+      /*background-color: #0F1626;*/
   }
 }
 @media (min-width: 513px)  and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5),
@@ -23,7 +24,8 @@ body::before {
        (min-width: 1025px) and (max-width: 2048px) and (-webkit-max-device-pixel-ratio: 1.5),
        (min-width: 1025px) and (max-width: 2048px) and (max-resolution: 1.5dppx)  {
   body::before {
-    background-image: url('images/bg_2048.jpg');
+    background-image: url('images/stars-sky.jpg');
+    /*background-color: #0F1626;*/
   }
 }
 @media (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 1.5),
@@ -31,11 +33,29 @@ body::before {
        (min-width: 2049px) and (-webkit-max-device-pixel-ratio: 1.5),
        (min-width: 2049px) and (max-resolution: 1.5dppx) {
   body::before {
-    background-image: url('images/bg_2880.jpg');
+      background-image: url('images/stars-sky.jpg');
+      /*background-color: #0F1626;*/
   }
 }
 body .demo-blog {
   font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+
+ .demo-card-wide.mdl-card {
+     width: 512px;
+ }
+.demo-card-wide > .mdl-card__title {
+    color: #fff;
+    height: 176px;
+    background-color: #F5F5F5;
+}
+.demo-card-wide > .mdl-card__menu {
+    color: #fff;
+}
+
+
+.title-name {
+    color: #0F1626 !important;
 }
 
 .demo-blog .demo-blog__posts {
@@ -170,7 +190,7 @@ body .demo-blog {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.demo-blog.is-small-screen .demo-blog__posts > .mdl-card.coffee-pic {
+.demo-blog.is-small-screen .demo-blog__posts > .mdl-card.name-plate {
   -webkit-order: 0;
       -ms-flex-order: 0;
           order: 0;
@@ -180,8 +200,8 @@ body .demo-blog {
       -ms-flex-order: -1;
           /*order: -1;*/
 }
-.demo-blog .coffee-pic .mdl-card__media {
-  background-image: url('images/coffee.jpg');
+.demo-blog .name-plate .mdl-card__media {
+  background-color: #F5F5F5;  fill-opacity: 0.5;
 }
 .demo-blog .something-else .mdl-card__media {
   display: -webkit-flex;
